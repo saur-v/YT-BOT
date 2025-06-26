@@ -10,7 +10,7 @@ export default function VideoProcessingScreen({ videoId }) {
   useEffect(() => {
     const indexVideo = async () => {
       try {
-        const res = await axios.post("http://localhost:8000/api/index/", {
+        const res = await axios.post(`${import.meta.env.VITE_API_BASE_URL}/api/index/`, {
           video_id: videoId,
         });
         setMessage("✅ Video indexed! Redirecting...");
