@@ -36,7 +36,7 @@ def rag_query_view(request):
 
     try:
         vectorstore = FAISS.load_local(
-            f"/data/faiss_index_{video_id}", embeddings, allow_dangerous_deserialization=True
+            f"/tmp/faiss_index_{video_id}", embeddings, allow_dangerous_deserialization=True
         )
     except Exception as e:
         return Response({"error": "Index not found. Please index the video first."}, status=404)
@@ -95,8 +95,8 @@ def index_video_view(request):
         if not video_id:
             return JsonResponse({"error": "Missing video_id"}, status=400)
 
-        os.makedirs("/data", exist_ok=True)
-        index_path = os.path.join("/data", f"faiss_index_{video_id}")
+        os.makedirs("/tmp", exist_ok=True)
+        index_path = os.path.join("/tmp", f"faiss_index_{video_id}")
 
 
         if os.path.exists(index_path):
