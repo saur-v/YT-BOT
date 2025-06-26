@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: yt-rag-backend
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn rag_backend.wsgi:application
+    envVars:
+      - key: OPENROUTER_API_KEY
+        value: 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
+    disk:
+      name: faiss-data
+      mountPath: /data
+      sizeGB: 1
