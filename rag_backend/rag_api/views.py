@@ -94,7 +94,8 @@ def index_video_view(request):
 
         if not video_id:
             return JsonResponse({"error": "Missing video_id"}, status=400)
-        
+
+        os.makedirs("/data", exist_ok=True)
         index_path = os.path.join("/data", f"faiss_index_{video_id}")
 
 
