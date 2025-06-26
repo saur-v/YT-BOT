@@ -25,7 +25,7 @@ export default function QueryBox({ initialVideoId = "" }) {
     setLoading(true);
 
     try {
-      const res = await axios.post("http://localhost:8000/api/ask/", {
+      const res = await axios.post(`${import.meta.env.VITE_API_BASE_URL}/api/ask/`, {
         question,
         video_id: videoId,
       });
