@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-qj!_)z7z6%m4c3fwq2%rnyv3)f&%cno7*s-ttv5&zids%7syre
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["yt-transcript-bot.onrender.com", "localhost", "127.0.0.1"]
+ALLOWED_HOSTS = ["*"]
 
 
 
