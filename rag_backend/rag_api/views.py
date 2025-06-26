@@ -14,8 +14,6 @@ from django.http import JsonResponse
 import json
 from youtube_transcript_api import YouTubeTranscriptApi
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-import torch
-torch_device = "cpu"
 
 
 load_dotenv()
