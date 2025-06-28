@@ -154,9 +154,3 @@ Here are some planned enhancements for the **YouTube Transcript QA Bot**:
   Enable user accounts to store history, preferences, or favorite videos.
 
 
-## 🙌 Credits
-
-- [LangChain](https://www.langchain.com/)
-- [Groq](https://console.groq.com/)
-- [HuggingFace](https://huggingface.co/)
-- [YouTube Transcript API](https://pypi.org/project/youtube-transcript-api/)
