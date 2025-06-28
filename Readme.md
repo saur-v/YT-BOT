@@ -122,6 +122,13 @@ npm run dev
 
 ---
 
+## 📸 Demo Screenshots
+
+![Home Page](Demo/Home.png)
+![Video Indexing](Demo/processing.png)
+![Ask Screen](Demo/Q&A.png)
+
+
 ## 📌 Notes
 
 - YouTube transcripts must be available in English
@@ -129,6 +136,23 @@ npm run dev
 - 100% free APIs (Groq + HuggingFace)
 
 ---
+
+## 🚧 Future Work
+
+Here are some planned enhancements for the **YouTube Transcript QA Bot**:
+
+- 🌍 **Multilingual Support**  
+  Enable transcript parsing and question-answering in multiple languages using Whisper or other models.
+
+- 🕒 **Chat History & Context Memory**  
+  Store previous user questions and answers to maintain conversational context over time.
+
+- 🔍 **Improved Video Search & Filtering**  
+  Enhance the frontend to allow better YouTube search filtering by duration, views, or relevance.
+
+- 🔐 **User Authentication (Optional)**  
+  Enable user accounts to store history, preferences, or favorite videos.
+
 
 ## 🙌 Credits
 
